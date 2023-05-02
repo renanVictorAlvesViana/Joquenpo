@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+ <html lang="pt-br"> 
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>Joquenpô</title> 
+  
+     <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+     <h1>Pedra papel ou tesoura</h1> 
+      
+     <div class="container"> 
+         <div class="flex-column"> 
+            <b> computador</b> 
+             <span id="computer-chose" class="side">🕒</span> 
+         </div> 
+  
+         <div class="container-game"> 
+             <div class="vs hide"> 
+                 X 
+                 <span class="result" id="result">Você ganhou!</span> 
+             </div> 
+  
+             <div class="player"> 
+                 <h2>Escolha</h2> 
+                 <div class="chose"> 
+                     <button id="paper">🤚</button> 
+                     <button id="scissors">✌️</button> 
+                     <button id="rock">✊</button> 
+                 </div> 
+             </div> 
+         </div> 
+  
+         <div class="flex-column"> 
+            <b> você </b>
+             <span id="you-chose" class="side">🕒</span> 
+         </div> 
+     </div> 
+  
+     <button id="reset" class="hide">Começar novamente</button> 
+  
+     <div class="scoreboard-container"> 
+         <h2>placar</h2> 
+  
+         <div class="scoreboard"> 
+             <span id="computer-score">0</span> 
+             <span class="vs">X</span> 
+             <span id="player-score">0</span> 
+         </div> 
+  
+         <button id="score-button">Zerar</button> 
+     </div> 
+  
+     <script src="main.js"></script> 
+     
+ </body> 
+ </html>
